@@ -17,9 +17,6 @@ export default function FloatingWhatsApp() {
         rel="noreferrer"
         className="relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:scale-110 transition-transform group"
       >
-        {/* Ping Animation Background */}
-        <div className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-50"></div>
-        
         <MessageCircle size={32} />
         
         {/* Tooltip */}

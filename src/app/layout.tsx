@@ -5,7 +5,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StickyCallButton from "@/components/ui/StickyCallButton";
-import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import JsonLd from "@/components/seo/JsonLd";
 import { GoogleTagManager } from '@next/third-parties/google';
 
@@ -44,7 +43,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <StickyCallButton />
-        <FloatingWhatsApp />
       </body>
     </html>
   );

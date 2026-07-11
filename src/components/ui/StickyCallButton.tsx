@@ -16,25 +16,29 @@ export default function StickyCallButton() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-40 p-3 md:hidden transition-transform duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 z-40 md:hidden transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="flex gap-2">
+      <div className="flex">
+        {/* Hemen Ara — siyah arka plan, sarı ikon ve yazı */}
         <a
           href="tel:+905394456052"
-          className="flex items-center justify-center gap-2 bg-primary text-background-secondary flex-1 py-3.5 rounded-xl font-bold text-base shadow-[0_-5px_20px_rgba(255,184,0,0.3)] active:scale-[0.97] transition-transform"
+          className="flex items-center justify-center gap-2 bg-black text-primary flex-1 py-4 font-bold text-base active:opacity-80 transition-opacity border-r border-white/10"
         >
           <Phone size={20} />
           <span>Hemen Ara</span>
         </a>
+
+        {/* WhatsApp — yeşil arka plan, beyaz ikon ve yazı */}
         <a
           href="https://wa.me/905394456052"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center justify-center gap-2 bg-[#25D366] text-white w-14 rounded-xl font-bold shadow-[0_-5px_20px_rgba(37,211,102,0.3)] active:scale-[0.97] transition-transform flex-shrink-0"
+          className="flex items-center justify-center gap-2 bg-[#25D366] text-white flex-1 py-4 font-bold text-base active:opacity-80 transition-opacity"
         >
-          <MessageCircle size={22} />
+          <MessageCircle size={20} />
+          <span>WhatsApp</span>
         </a>
       </div>
     </div>
